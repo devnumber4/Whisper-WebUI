@@ -50,6 +50,13 @@ def get_txt(segments):
         if segment['text'].startswith(' '):
             segment['text'] = segment['text'][1:]
         output += f"{segment['text']}\n"
+        output = output.replace("\n", " ")
+        output = output.replace("\r", " ")
+        output = output.replace("\t", " ")
+        output = output.replace("  ", " ")
+        output = output.replace("   ", " ")
+        output = output.replace("...", " ")
+        #output = output.replace(" d ", " a ")
     return output
 
 

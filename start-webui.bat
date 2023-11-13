@@ -3,6 +3,7 @@
 goto :activate_venv
 
 :launch
+start "" http://localhost:7860/
 %PYTHON% app.py %*
 pause
 

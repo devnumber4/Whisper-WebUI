@@ -50,7 +50,7 @@ class App:
                                                label="Model")
                         dd_lang = gr.Dropdown(choices=["Automatic Detection"] + self.whisper_inf.available_langs,
                                               value="Automatic Detection", label="Language")
-                        dd_file_format = gr.Dropdown(["SRT", "WebVTT", "txt"], value="SRT", label="File Format")
+                        dd_file_format = gr.Dropdown(["txt", "WebVTT", "SRT"], value="txt", label="File Format")
                     with gr.Row():
                         cb_translate = gr.Checkbox(value=False, label="Translate to English?", interactive=True)
                     with gr.Row():
@@ -88,7 +88,7 @@ class App:
                                                label="Model")
                         dd_lang = gr.Dropdown(choices=["Automatic Detection"] + self.whisper_inf.available_langs,
                                               value="Automatic Detection", label="Language")
-                        dd_file_format = gr.Dropdown(choices=["SRT", "WebVTT", "txt"], value="SRT", label="File Format")
+                        dd_file_format = gr.Dropdown(choices=["txt", "WebVTT", "SRT"], value="txt", label="File Format")
                     with gr.Row():
                         cb_translate = gr.Checkbox(value=False, label="Translate to English?", interactive=True)
                     with gr.Row():
@@ -123,7 +123,7 @@ class App:
                                                label="Model")
                         dd_lang = gr.Dropdown(choices=["Automatic Detection"] + self.whisper_inf.available_langs,
                                               value="Automatic Detection", label="Language")
-                        dd_file_format = gr.Dropdown(["SRT", "WebVTT", "txt"], value="SRT", label="File Format")
+                        dd_file_format = gr.Dropdown(["txt", "WebVTT", "SRT"], value="txt", label="File Format")
                     with gr.Row():
                         cb_translate = gr.Checkbox(value=False, label="Translate to English?", interactive=True)
                     with gr.Accordion("Advanced_Parameters", open=False):
